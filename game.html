@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./game-style.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet" />
+    <title>Snake Game</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="rules">
+            <h2>GRA SNAKE</h2>
+            <p>
+                Dzięki za podanie maila! W ramach podziękowania zapraszamy Cię do gry. <br>
+                Pamiętasz snake’a na starej Nokii Twojej mamy? <br>
+                Dziś masz szansę sprawdzić się w naszej Zdroweat’owej wersji tej cudownej gry! <br>
+                Zapoznaj się z zasadami, a zwycięstwo będzie Twoje!
+            </p>
+            <h3>ZASADY GRY: </h3>
+            <ol>
+                <li> Nasz wąż planuje długie życie, dlatego nie pije, nie pali, a także odżywia się zdrowo. W związku z
+                    tym, za każdego zjedzonego brokuła otrzymasz punkt, a wąż w nagrodę urośnie. Natomiast jedzenie
+                    „śmieciowego” żarcia skraca węża i zabiera Twoje punkty. Uważaj - niezdrowe jedzenie pojawia się z nienacka!</li>
+                <li> Nasz wąż jest domatorem, nie lubi wychodzić ze swojego domu. Nie denerwuj więc go i steruj nim tak,
+                    aby nie wyszedł poza jego granice. </li>
+                <li> Nasz wąż nie lubi jak się robi z niego durnia – nie każ mu więc gonić własnego ogona, ani tym
+                    bardziej, nie uderzaj jego głową w resztę ciała. </li>
+                <li> Żeby nie było za łatwo – w pewnym momencie gry wąż zyska więcej sił i zacznie wić się szybciej.
+                        Nie pozwól, żeby wąż ucierpiał. </li>
+                <li> Pobijaj swoje rekordy - za każdy pobity rekord przewidziana jest atrakcyjna nagroda dźwiękowa. </li>
+            </ol>
+            <p>
+                Powyższe zasady możesz sobie przypomnieć klikając podczas gry przycisk „zasady gry”.
+                <br>Dobrej zabawy :)
+            </p>
+            <button class='gameStartButton'>ROZPOCZNIJ GRĘ!</button>
+        </div>
+
+        <div class="gameWindow hiddenOnStart">
+            <div class="gameNav">
+                <button class="gamePlay">ZASADY GRY</button>
+                <h2 class="high-score"></h2>
+                <h2 class="score"></h2>
+            </div>
+            <canvas class="canvas" height="608" width="608"></canvas>
+            <div class="arrow__container">
+                <i class="fas fa-caret-square-up arrowUp arrow"></i>
+                <i class="fas fa-caret-square-left arrowLeft arrow"></i>
+                <i class="fas fa-caret-square-right arrowRight arrow"></i>
+                <i class="fas fa-caret-square-down arrowDown arrow"></i>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./snake.js"></script>
+<script src="./draw.js"></script>
+
+</html>
